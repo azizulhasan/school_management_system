@@ -1,0 +1,34 @@
+********************************************
+	8-12-19
+********************************************
+
+
+
+
+
+
+
+
+
+     <?php }else{
+        echo "<div class='col-sm-5 offset-sm-4 alert    alert-danger' role='alert'>wrong</div>";
+      }
+
+
+
+
+
+   ?>
+
+
+
+
+
+-
+-- Constraints for table `teachers`
+--
+ALTER TABLE `teachers`
+  ADD CONSTRAINT `teachers_ibfk_1` FOREIGN KEY (`subject_id`) REFERENCES `subjects` (`id`)
+MySQL said: Documentation
+
+#1452 - Cannot add or update a child row: a foreign key constraint fails (`sms`.`#sql-1c70_1b`, CONSTRAINT `teachers_ibfk_1` FOREIGN KEY (`subject_id`) REFERENCES `subjects` (`id`))
